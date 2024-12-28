@@ -87,10 +87,6 @@ class Metadata:
                         l[obj.key] = obj.valuei
                     elif obj.valuef is not None:
                         l[obj.key] = obj.valuef
-                    elif obj.valued is not None:
-                        l[obj.key] = obj.valued
-                    elif obj.values is not None:
-                        l[obj.key] = obj.values
         return l
 
     def read_by_key(self, key):
