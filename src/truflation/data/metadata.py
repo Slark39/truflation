@@ -11,7 +11,7 @@ from sqlalchemy.orm import declarative_base, Session
 Base = declarative_base()
 class MetadataTable(Base):
     """
-    A class used to interact with a metadata table in a SQL database.
+    A class used to interact with a metadata table in a SQL database.d
 
     This class handles writing to and reading from a table containing
     metadata. The metadata table has the following columns: table, key, valuei,
@@ -69,21 +69,7 @@ class Metadata:
                             table=table, key=k, valuei=v,
                             created_at= now
                         )
-                    elif isinstance(v, datetime):
-                        l = MetadataTable(
-                            table=table, key=k, valued=v,
-                            created_at= now
-                        )
-                    elif isinstance(v, float):
-                        l = MetadataTable(
-                            table=table, key=k, valuef=v,
-                            created_at= now
-                        )
-                    elif isinstance(v, str):
-                        l = MetadataTable(
-                            table=table, key=k, values=v,
-                            created_at= now
-                        )
+
                     if l is not None:
                         session.merge(l)
                 session.commit()
