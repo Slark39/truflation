@@ -104,11 +104,5 @@ class Metadata:
                 for obj in result.scalars().all():
                     if obj.valuei is not None:
                         l[obj.table] = obj.valuei
-                    elif obj.valuef is not None:
-                        l[obj.table] = obj.valuef
-                    elif obj.valued is not None:
-                        l[obj.table] = obj.valued
-                    elif obj.values is not None:
-                        l[obj.table] = obj.values
         return l
 
