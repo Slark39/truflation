@@ -15,10 +15,6 @@ class Pipeline:
     """
     A class that defines a data pipeline, used for ingesting, transforming, and exporting data.
 
-    This class inherits from the `Task` base class and implements the ingestion
-    process for a specific pipeline, as defined by a `PipeLineDetails` object.
-    Each `Pipeline` object can ingest data from multiple sources, transform the
-    data, and then export it to multiple destinations.
 
     Attributes
     ----------
