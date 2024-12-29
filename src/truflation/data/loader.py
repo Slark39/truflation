@@ -47,12 +47,6 @@ class Loader(Task):
         ----------
         source: str
             The source from which to read the data.
-
-        key: str
-            The key associated with the data. This could be a filename,
-            database key, etc., depending on the specific reader and writer.
-
-        Returns
         -------
         None
         """
